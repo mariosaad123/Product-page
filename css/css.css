@@ -1,0 +1,450 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: ar-font;
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+body {
+    direction: rtl;
+    font-family: ar-font, sans-serif;
+}
+
+header video {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+header .product .product-img img {
+    width: 100%;
+}
+
+header .overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+header .brand {
+    padding-top: 40px;
+}
+
+header .header-text {
+    padding-top: 190px;
+}
+
+header .header-text h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 46px;
+    color: #555555;
+}
+
+header .header-text p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    line-height: 32px;
+    color: #5d5d5d;
+}
+
+
+header .header-button a.btn {
+    padding: 22px 55px;
+    background-color: #f03131;
+    color: white;
+    margin-left: 15px;
+}
+
+/* لتنسيق الصنف الاخير من العنصر */
+header .header-button a.btn:last-child {
+    background: transparent;
+    color: #f03131;
+}
+
+/* لتحريك العناصر داخل الصنف برودكت */
+header .product {
+    position: relative;
+}
+
+header .product .product-label img {
+    position: absolute;
+    top: -90px;
+    right: -100px;
+    size: 162px 162px;
+}
+
+
+
+/* خاص بداخل المين (main) */
+section.features .features-title h2 {
+    font-size: 36px;
+    color: #555;
+    line-height: 32px;
+    padding-bottom: 45px;
+    position: relative;
+    margin-top: 70px;
+}
+
+/* لتحديد عنصر زائف وهو خط فارغ اسفل الكلمة */
+section.features .features-title h2::after {
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: #f03131;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.features .media-features .d-flex {
+    padding: 70px 0;
+    border-bottom: 3px solid #eeeeee;
+}
+
+/* لتحديد الحاوية الثانية  */
+section.features .media-features .d-flex:nth-child(even) {
+    direction: ltr;
+}
+
+section.features .media-features .d-flex img {
+    margin: 0 80px;
+}
+
+section.features .media-features .d-flex h4 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f03131;
+    padding: 0 25px;
+    margin-bottom: 50px;
+    border-right: 3px solid #f03131;
+}
+
+section.features .media-features .d-flex:nth-child(even) h4 {
+    border-right: 0;
+    border-left: 3px solid #f03131;
+}
+
+section.features .media-features .d-flex p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #555555;
+}
+
+
+
+/* سكشن الاسعار  */
+section.prices {
+    padding: 50px 0 60px;
+    background-color: #f7f7f7;
+}
+
+section.prices .prices-text h2 {
+    font-size: 30px;
+    color: #555555;
+}
+
+section.prices .plan-card {
+    background-color: white;
+    border: 2px solid #ededed;
+    padding: 15px 0;
+    margin-top: 100px;
+    color: #a9a9ab;
+}
+
+section.prices .plan-card span.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f03131;
+}
+
+section.prices .plan-card h5 {
+    font-size: 48px;
+    margin: 30px auto;
+}
+
+section.prices .plan-card h5 span {
+    font-size: 18px;
+    vertical-align: bottom;
+}
+
+section.prices .plan-card ul {
+    padding: 0;
+}
+
+section.prices .plan-card ul li {
+    font-size: 18px;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+section.prices .plan-card a.btn {
+    border: 3px solid #f03131;
+    background-color: white;
+    color: #f03131;
+    padding: 10px 40px;
+    transition: 0.5s all ease;
+}
+
+section.prices .plan-card a.btn:hover {
+    background-color: #f03131;
+    color: white;
+}
+
+
+section.prices .col-md-6:nth-child(3) .plan-card {
+    padding-top: 60px;
+    margin-top: 55px;
+}
+
+section.prices .col-md-6:nth-child(3) .plan-card a.btn {
+    background-color: #f03131;
+    color: white;
+}
+
+
+
+/* سكشن الاسئلة الاكثر شيوعا  */
+section.faq .accordion .accordion-button {
+    background-color: #f03131;
+    color: white;
+}
+
+section.faq {
+    padding: 55px 0;
+    background-color: white;
+}
+
+section.faq .faq-title h2 {
+    font-size: 30px;
+    color: #f03131;
+    margin-bottom: 55px;
+}
+
+section.faq .accordion .accordion-item {
+    margin-bottom: 15px;
+}
+
+section.faq .accordion .accordion-item button {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+section.faq .accordion .accordion-item .accordion-body {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+/* سكشن خاص بالفديو الثاني في الخلفية  */
+section.video{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+section.video video {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section.video .overlay {
+    background-color: rgba(240, 49, 49, 0.7);
+    min-height: 100%;
+    position: absolute;
+    inset: 0;
+}
+
+section.video .overlay button {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    transform: translate(50%, 50%);
+}
+
+section.video .overlay button i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 auto 45px;
+}
+
+
+/* سكشن التواصل */
+section.contact {
+    padding: 60px 0 40px;
+    background-color: #003366;
+}
+
+section.contact h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    line-height: 50px;
+}
+section.contact form input, section.contact form textarea {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    text-align: right;
+    width: 90%;
+}
+
+section.contact form button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #f03131;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+section.contact form button i {
+    margin-right: 10px;
+}
+
+section.contact form .invalid-feedback {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    color: #f03131;
+    font-weight: bold;
+}
+
+section.contact .blog a.blog-link {
+    text-decoration: none;
+}
+
+section.contact .blog .d-flex {
+    margin-bottom: 25px;
+}
+
+section.contact .blog h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f03131;
+    margin-bottom: 15px;
+}
+
+section.contact .blog p {
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+}
+
+
+/* الذيل */
+footer {
+    background-color: #01203f;
+    padding: 25px 0;
+}
+
+footer .list-inline .list-inline-item a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    color: #1d1d1d;
+    background-color: #758594;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s all ease;
+}
+
+footer .list-inline .list-inline-item a:hover {
+    background-color: #f03131;
+}
+
+footer .copyright p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #758594;
+    text-align: left;
+}
+
+@media (min-width: 992px) {
+    header .header-text {
+        padding-top: 80px;
+    }
+
+    header video {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header video {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.video {
+        width: 100%;
+        height: 100%;
+    }
+
+    header .overlay .product {
+        margin-top: 100px;
+    }
+
+    section.features .media-features .d-flex {
+        flex-flow: column;
+        text-align: center;
+    }
+
+    section.features .media-features .d-flex img {
+        margin: 0 auto 50px;
+    }
+
+    section.features .media-features .d-flex h4 {
+        border: none !important;
+    }
+
+    section.contact h4 {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:400px) {
+    header video {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.video video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .copyright p {
+        text-align: center;
+    }
+}
